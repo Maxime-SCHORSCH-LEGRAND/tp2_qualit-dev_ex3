@@ -28,4 +28,8 @@ public class Formation {
         }
     }
 
+    public Map getMapMatieres() {
+        return this.matieres;
+    }
+
 }
