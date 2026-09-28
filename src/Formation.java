@@ -24,6 +24,7 @@ public class Formation {
         if (this.matieres.containsKey(mat)) {
             return this.matieres.get(mat).floatValue();
         } else {
+            // throw MatiereNotFound Exception
             return 0;
         }
     }
