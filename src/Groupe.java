@@ -46,4 +46,25 @@ public class Groupe {
 
         return somme / etudiants.size();
     }
+    public void triParMerite() {
+
+        for (int i = 0; i < etudiants.size() - 1; i++) {
+
+            for (int j = i + 1; j < etudiants.size(); j++) {
+
+                try {
+                    if (etudiants.get(i).moyenneGenerale()
+                            < etudiants.get(j).moyenneGenerale()) {
+
+                        Etudiant temp = etudiants.get(i);
+                        etudiants.set(i, etudiants.get(j));
+                        etudiants.set(j, temp);
+                    }
+
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+    }
 }
