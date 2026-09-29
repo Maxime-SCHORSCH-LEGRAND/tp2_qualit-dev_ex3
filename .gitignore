@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
@@ -28,3 +29,19 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+=======
+# Visual Studio Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+*.vsix
+
+./lib
+bin
+>>>>>>> 054c708576a70fba5b7488ecbba1d0ac12d73fc8
