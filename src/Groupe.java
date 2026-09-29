@@ -26,4 +26,24 @@ public class Groupe {
     public ArrayList<Etudiant> getEtudiants() {
         return etudiants;
     }
+    public double moyenneMatiere(Matiere matiere) throws Exception {
+
+        double somme = 0;
+
+        for (Etudiant etudiant : etudiants) {
+            somme += etudiant.moyenneMatiere(matiere);
+        }
+
+        return somme / etudiants.size();
+    }
+    public double moyenneGenerale() throws Exception {
+
+        double somme = 0;
+
+        for (Etudiant etudiant : etudiants) {
+            somme += etudiant.moyenneGenerale();
+        }
+
+        return somme / etudiants.size();
+    }
 }
