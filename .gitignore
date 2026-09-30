@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
@@ -42,6 +41,6 @@ bin/
 
 *.vsix
 
-./lib
+lib
 bin
->>>>>>> 054c708576a70fba5b7488ecbba1d0ac12d73fc8
+

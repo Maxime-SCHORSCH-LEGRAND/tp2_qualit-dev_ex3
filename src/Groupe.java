@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Groupe {
 
@@ -45,5 +46,13 @@ public class Groupe {
         }
 
         return somme / etudiants.size();
+    }
+
+    public void triAlpha() {
+        Collections.sort(this.etudiants);
+    }
+
+    public void triAntiAlpha() {
+        Collections.sort(this.etudiants, Collections.reverseOrder());
     }
 }

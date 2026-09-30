@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Etudiant {
+public class Etudiant implements Comparable<Etudiant> {
 
     private Identite identite;
     private Formation formation;
@@ -80,5 +80,9 @@ public class Etudiant {
         }
 
         return somme / totalCoef;
+    }
+
+    public int compareTo(Etudiant e) {
+        return this.identite.getNom().compareTo(e.identite.getNom());
     }
 }   
